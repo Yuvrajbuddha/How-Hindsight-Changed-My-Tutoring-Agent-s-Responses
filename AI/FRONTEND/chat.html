@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Mentor AI</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <div>
+            <h2>🎓 Study Mentor AI</h2>
+            <p id="welcome"></p>
+        </div>
+
+        <div>
+            <button onclick="showMemories()">
+                Memories
+            </button>
+
+            <button onclick="logout()">
+                Logout
+            </button>
+        </div>
+
+    </div>
+
+    <div class="main-container">
+
+        <div id="memory-panel">
+
+            <h3>📚 Stored Knowledge</h3>
+
+            <p>
+                Click Memories to load.
+            </p>
+
+        </div>
+
+        <div class="chat-section">
+
+            <div id="chat-box"></div>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="message"
+                    placeholder="Ask anything..."
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <div class="footer">
+        Powered by Groq + Hindsight Memory
+    </div>
+
+</body>
+</html>
